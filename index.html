@@ -178,8 +178,8 @@
                 <strong>Gnanesh Nayak</strong>
 
                 and I'm a <strong> Full Stack Web Developer </strong> building
-                the Front-end of Websites and Web Applications that leads to the
-                success of the overall product. Check out some of my work in the
+                the Web Applications that leads to the success of the overall
+                product. Check out some of my work in the
                 <strong>Projects</strong> section.
               </p>
 
@@ -323,11 +323,14 @@
           </span>
         </h2>
         <div class="contact__form-container">
+          <!-- action="https://formspree.io/f/xlekdoqj" -->
+          <!-- enctype="multipart/form-data"
+            class="contact__form" -->
           <form
-            action="https://formspree.io/f/xlekdoqj"
             method="POST"
-            enctype="multipart/form-data"
-            class="contact__form"
+            data-netlify="true"
+            name="contact"
+            onSubmit="submit"
           >
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
