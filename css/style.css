@@ -48,7 +48,7 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
@@ -123,11 +123,11 @@ textarea {
   font-weight: 800;
 }
 .heading-sec__main--lt::after {
-  content: "";
+  content: '';
   background: #facf0f !important;
 }
 .heading-sec__main::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(100% + 1.5rem);
   height: 5px;
@@ -201,8 +201,8 @@ textarea {
   color: #111;
 }
 .btn--theme-inv {
-  color: #fff;
-  background: #fff;
+  color: #111;
+  background: #facf0f;
   border: 2px solid #fff;
   box-shadow: none;
   padding: calc(1.5rem - 2px) calc(5rem - 2px);
@@ -288,12 +288,15 @@ textarea {
   transition: background 0.3s;
 }
 .home-hero__social-icon-link:hover {
+  /* background: rgba(255, 255, 255, 0.1); */
   background: rgba(255, 255, 255, 0.1);
+  /* background: red; */
 }
 .home-hero__social-icon-link--bd-none {
   border-bottom: 0;
 }
 .home-hero__social-icon {
+  filter: invert(1);
   width: 100%;
 }
 .home-hero__content {
@@ -898,14 +901,14 @@ textarea {
   overflow: hidden;
 }
 .mouse::before {
-  content: "";
+  content: '';
   width: 5px;
   height: 5px;
   position: absolute;
   top: 7px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #eee;
+  background-color: #000;
   border-radius: 50%;
   opacity: 1;
   animation: wheel 1.3s infinite;
@@ -923,5 +926,19 @@ textarea {
   to {
     opacity: 0;
     top: 27px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
   }
 }
