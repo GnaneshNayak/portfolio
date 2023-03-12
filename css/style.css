@@ -444,7 +444,7 @@ textarea {
   background-position: center;
 }
 .contact__form-container {
-  box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: #fff;
   padding: 4rem;
   margin-top: 6rem;
