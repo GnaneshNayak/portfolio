@@ -617,7 +617,10 @@ textarea {
   color: grey;
   margin-bottom: 2rem;
 }
-
+.project-details__desc-para li::before {
+  content: '• ';
+  color: gray; /* or whatever color you prefer */
+}
 .project-details__tools-used {
   margin: 0 0 7rem 0;
 }
